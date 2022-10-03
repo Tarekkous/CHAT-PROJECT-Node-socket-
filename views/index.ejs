@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Chat PROJECT</title>
+</head>
+<body>
+
+    <div class="app">
+<h1 class="chatTitle">CHAT ROOM </h1>
+<div class="container">
+    <div class="channelList">
+        <h1>Let's talk</h1>
+    </div>
+    <div class="messageContainer" id="msgContainer">
+        
+    </div>
+</div>
+
+<div id="IsWriting"></div>
+<form methode="POST" id="chatForm" >
+    <input type="text" id="msgInput" autofocus>
+    <input type="submit" id="btnSend" value="Envoyer">
+</form>
+</div>
+<!-- onkeypress="isWriting()" onblur="isNotWriting()" -->
+<script src="/socket.io/socket.io.js"></script>
+    <script src="chat.js"></script>
+</body>
+</html>
